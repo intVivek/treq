@@ -1,4 +1,16 @@
 .HomePage {
   height: 100vh;
   padding: 0 82px;
+
+  > .content {
+    display: flex;
+    height: 100%;
+    margin-top: 24px;
+    gap: 40px;
+
+    > .accounts {
+      display: flex;
+      width: calc(100% - 500px);
+    }
+  }
 }

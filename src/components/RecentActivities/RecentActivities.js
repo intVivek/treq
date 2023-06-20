@@ -17,7 +17,6 @@ const RecentActivities = () => {
     fetch("https://mocki.io/v1/433b83e6-d5f7-4607-85db-8c47d992e4fd").then(
       (res) => {
         res.json().then((data) => {
-          console.log(data);
           setData(data);
         });
       }
@@ -30,6 +29,7 @@ const RecentActivities = () => {
       {data &&
         data?.map((item, index) => (
           <RecentActivityCard
+            key={index}
             message={item.message}
             title={item.title}
             createdAt={item.created_ts}
