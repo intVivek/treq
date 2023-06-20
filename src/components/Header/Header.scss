@@ -7,9 +7,8 @@
   font-size: 20px;
   line-height: 32px;
   color: #1f2c35;
-  gap: 20px;
-  padding-top: 32px;
-  border-bottom: #efefef;
+  height: 120px;
+  border-bottom: 2px solid #efefef;
 
   > .topSection {
     width: 100%;
@@ -17,5 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 32px;
+    margin-bottom: auto;
   }
 }
