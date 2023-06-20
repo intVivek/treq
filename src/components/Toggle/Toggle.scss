@@ -1,0 +1,18 @@
+.treq-toggle {
+  display: flex;
+  width: max-content;
+  gap: 60px;
+
+  > div {
+    height: 40px;
+    padding: 0px 8px;
+    color: var(--primary-gray);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  > .active {
+    box-shadow: 0px 2px 0px #e06a43;
+  }
+}

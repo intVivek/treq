@@ -1,0 +1,22 @@
+.treqHeading {
+  position: relative;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--primary-gray);
+  width: max-content;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.treqHeading:before {
+  content: "";
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  right: -30px;
+  background: var(--primary-gray);
+}

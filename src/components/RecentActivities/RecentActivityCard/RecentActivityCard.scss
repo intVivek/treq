@@ -1,0 +1,38 @@
+.recentActivity {
+  height: 80px;
+  width: max-content;
+  display: flex;
+  gap: 16px;
+
+  > .body {
+    width: 400px;
+
+    > .title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: left;
+      color: var(--primary-gray);
+    }
+
+    > .bottom {
+      display: flex;
+      gap: 4px;
+
+      > .message {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1f2c35;
+      }
+
+      > .createdAt {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #7f8899;
+        margin-left: auto;
+      }
+    }
+  }
+}
