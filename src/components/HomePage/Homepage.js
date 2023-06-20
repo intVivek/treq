@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import RecentActivities from "../RecentActivities/RecentActivities";
 import OverSeasAccount from "../OverSeasAccount/OverSeasAccount";
 import IndianAccount from "../IndianAccount/IndianAccount";
+import QuickLinks from "../QuickLinks/QuickLinks";
 
 const Homepage = () => {
   return (
@@ -16,6 +17,7 @@ const Homepage = () => {
           <IndianAccount />
         </div>
       </div>
+      <QuickLinks />
     </div>
   );
 };
