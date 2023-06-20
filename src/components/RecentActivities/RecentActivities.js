@@ -2,6 +2,13 @@ import Heading from "../Heading/Heading";
 import "./RecentActivities.scss";
 import React, { useEffect, useState } from "react";
 import RecentActivityCard from "./RecentActivityCard/RecentActivityCard";
+import { ReactComponent as FileIcon } from "..//assets/icons/FileIcon.svg";
+import { ReactComponent as ReceivedIcon } from "../assets/icons/ReceivedIcon.svg";
+
+const statusIcon = {
+  AccountStatus: <FileIcon />,
+  "Payment Received": <ReceivedIcon />,
+};
 
 const RecentActivities = () => {
   const [data, setData] = useState([]);
@@ -27,6 +34,7 @@ const RecentActivities = () => {
             title={item.title}
             createdAt={item.created_ts}
             status={item.status}
+            icon={statusIcon[item.status]}
           />
         ))}
     </div>

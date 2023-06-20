@@ -1,8 +1,24 @@
 .recentActivity {
-  height: 80px;
+  height: 100px;
   width: max-content;
   display: flex;
   gap: 16px;
+  align-items: center;
+  border-bottom: 1px solid var(--default-border-color);
+
+  > .statusIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: rgba(0, 162, 91, 0.1);
+
+    > svg {
+      stroke: #00a25b;
+    }
+  }
 
   > .body {
     width: 400px;
@@ -13,13 +29,15 @@
       line-height: 20px;
       text-align: left;
       color: var(--primary-gray);
+      margin-bottom: 4px;
     }
 
     > .bottom {
       display: flex;
-      gap: 4px;
+      align-items: baseline;
 
       > .message {
+        font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
@@ -27,6 +45,7 @@
       }
 
       > .createdAt {
+        font-style: normal;
         font-weight: 400;
         font-size: 12px;
         line-height: 20px;
