@@ -5,6 +5,11 @@
   gap: 16px;
   align-items: center;
   border-bottom: 1px solid var(--default-border-color);
+  cursor: pointer;
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
 
   > .statusIcon {
     width: 40px;
@@ -22,6 +27,9 @@
 
   > .body {
     width: 400px;
+    @media screen and (max-width: 1000px) {
+      width: 100%;
+    }
 
     > .title {
       font-weight: 500;

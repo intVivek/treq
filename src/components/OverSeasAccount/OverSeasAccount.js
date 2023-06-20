@@ -1,4 +1,3 @@
-import "./OverSeasAccount.scss";
 import React, { useEffect, useState } from "react";
 import OverSeasAccountCard from "./OverSeasAccountCard/OverSeasAccountCard";
 import AccountsWrapper from "../AccountsWrapper/AccountsWrapper";

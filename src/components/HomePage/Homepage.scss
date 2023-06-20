@@ -8,11 +8,20 @@
     margin-top: 24px;
     gap: 40px;
 
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
     > .accounts {
       display: flex;
       width: calc(100% - 500px);
       flex-direction: column;
       gap: 20px;
+
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+      }
     }
   }
 }
