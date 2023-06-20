@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../Header/Header";
 import RecentActivities from "../RecentActivities/RecentActivities";
 import OverSeasAccount from "../OverSeasAccount/OverSeasAccount";
+import IndianAccount from "../IndianAccount/IndianAccount";
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
         <RecentActivities />
         <div className="accounts">
           <OverSeasAccount />
+          <IndianAccount />
         </div>
       </div>
     </div>

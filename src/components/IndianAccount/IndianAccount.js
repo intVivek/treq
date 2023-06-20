@@ -1,12 +1,11 @@
-import "./OverSeasAccount.scss";
 import React, { useEffect, useState } from "react";
-import OverSeasAccountCard from "./OverSeasAccountCard/OverSeasAccountCard";
 import AccountsWrapper from "../AccountsWrapper/AccountsWrapper";
+import IndianAccountCard from "./IndianAccountCard/IndianAccountCard";
 
-const OverSeasAccount = () => {
+const IndianAccount = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("https://mocki.io/v1/d3596385-a881-4afd-8e38-5482986e0528").then(
+    fetch("https://mocki.io/v1/dbb4e707-b906-4972-9c7f-5b8bae9cb66d").then(
       (res) => {
         res.json().then((data) => {
           console.log(data);
@@ -15,19 +14,18 @@ const OverSeasAccount = () => {
       }
     );
   }, []);
-
   return (
-    <AccountsWrapper label={"Overseas Accounts"}>
+    <AccountsWrapper label={"Indian Accounts"}>
       {data &&
         data?.map((item, index) => (
-          <OverSeasAccountCard
+          <IndianAccountCard
             key={index}
-            currency={item.currency_key}
-            label={`${item.currency_symbol} ${item.balance}`}
+            bankName={item.bank_name}
+            accountNo={item.account_number}
           />
         ))}
     </AccountsWrapper>
   );
 };
 
-export default OverSeasAccount;
+export default IndianAccount;

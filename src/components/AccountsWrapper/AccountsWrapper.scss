@@ -1,0 +1,9 @@
+.accountContainer {
+  width: 100%;
+  .window {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+}
