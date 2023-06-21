@@ -17,7 +17,7 @@ const RecentActivities = () => {
     fetch("https://mocki.io/v1/433b83e6-d5f7-4607-85db-8c47d992e4fd").then(
       (res) => {
         res.json().then((data) => {
-          setData(data);
+          setData(data.sort((a,b)=>new Date(b.created_ts).getTime()-new Date(a.created_ts).getTime()));
         });
       }
     );
